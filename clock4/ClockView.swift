@@ -11,48 +11,45 @@ import UIKit
 @IBDesignable
 class ClockView: UIView {
   
-  @IBInspectable
-  public var hours: CGFloat = 12
+  /// The hour hand value - default is 0
+  @IBInspectable public var hours: CGFloat = 0 { didSet { setNeedsDisplay() } }
   
-  @IBInspectable
-  public var minutes: CGFloat = 33
+  /// The minute hand value - default is 0
+  @IBInspectable public var minutes: CGFloat = 0 { didSet { setNeedsDisplay() } }
   
-  @IBInspectable
-  public var seconds: CGFloat = 40
+  /// The second hand value - default is 0
+  @IBInspectable public var seconds: CGFloat = 0 { didSet { setNeedsDisplay() } }
   
-  @IBInspectable
-  private var myClock: StyleKit_Clock {
-    return StyleKit_Clock()
-  }
-  
-  convenience init(hours: CGFloat, minutes: CGFloat, seconds: CGFloat) {
+  /// Creating a ClockView can be done with these three Int paramaters
+  convenience init(hours: Int, minutes: Int, seconds: Int) {
     self.init()
-    self.hours = hours; self.minutes = minutes; self.seconds = seconds
+    //configureClock(hours: hours, minutes: minutes, seconds: seconds)
   }
   
   override var description: String {
     return "(h:\(hours), m:\(minutes), s:\(seconds))"
   }
   
-  var timeToDisplay: Date? {
-    didSet {
-      hours = CGFloat((self.timeToDisplay?.hour)!)
-      minutes = CGFloat((self.timeToDisplay?.minute)!)
-      seconds = CGFloat((self.timeToDisplay?.second)!)
-      configureClock(time: self.timeToDisplay!)
-      
+  /// Creating a ClockView is usually done with a Date by setting this public property
+  /// a real Date shows up... configure with Ints
+  public var timeToDisplay: Date? {
+    willSet {
+      configureClock(hours: (timeToDisplay?.hour)!,
+                     minutes: (timeToDisplay?.minute)!,
+                     seconds: (timeToDisplay?.second)!)
     }
   }
   
-  func configureClock(time: Date) {
-    if timeToDisplay == nil {
-      print("no time to display?", self.description)
-    }
+  func configureClock(hours: Int, minutes: Int, seconds: Int) {
+    self.hours = CGFloat(hours)
+    self.minutes = CGFloat(minutes)
+    self.seconds = CGFloat(seconds)
     print(self.description)
     setNeedsDisplay()
   }
   
   override func draw(_ rect: CGRect) {
+    /// StyleKits all require CGFloats for numbers as hours, minutes, and seconds
     StyleKit_Clock.drawClock(frame: rect, resizing: .center,
                              hours: hours, minutes: minutes, seconds: seconds)
   }
