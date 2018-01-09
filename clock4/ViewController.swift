@@ -10,11 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
   
-  @IBOutlet weak var clockView: ClockView?
+  @IBOutlet weak var clockView: ClockView!
+  @IBOutlet weak var UpdateBtn: UIBarButtonItem!
   
   override func viewDidLoad() {
     super.viewDidLoad()
     title = "PaintCode Clock"
+    
+  }
+  
+  @IBAction func updateAction(_ sender: Any) {
+    updateNow()
+  }
+  
+  func updateNow() {
     clockView?.timeToDisplay = Date()
   }
   

@@ -21,10 +21,10 @@ class ClockView: UIView {
   @IBInspectable public var seconds: CGFloat = 0 { didSet { setNeedsDisplay() } }
   
   /// Creating a ClockView can be done with these three Int paramaters
-  convenience init(hours: Int, minutes: Int, seconds: Int) {
-    self.init()
-    //configureClock(hours: hours, minutes: minutes, seconds: seconds)
-  }
+//  convenience init(hours: Int, minutes: Int, seconds: Int) {
+//    self.init()
+//    configureClock(hours: hours, minutes: minutes, seconds: seconds)
+//  }
   
   override var description: String {
     return "(h:\(hours), m:\(minutes), s:\(seconds))"
@@ -34,9 +34,9 @@ class ClockView: UIView {
   /// a real Date shows up... configure with Ints
   public var timeToDisplay: Date? {
     willSet {
-      configureClock(hours: (timeToDisplay?.hour)!,
-                     minutes: (timeToDisplay?.minute)!,
-                     seconds: (timeToDisplay?.second)!)
+      configureClock(hours: (newValue?.hour)!,
+                     minutes: (newValue?.minute)!,
+                     seconds: (newValue?.second)!)
     }
   }
   
