@@ -27,7 +27,7 @@ class ClockView: UIView {
 //  }
   
   override var description: String {
-    return "(h:\(hours), m:\(minutes), s:\(seconds))"
+    return "ClockView (h:\(hours), m:\(minutes), s:\(seconds))"
   }
   
   /// Creating a ClockView is usually done with a Date by setting this public property
@@ -44,7 +44,6 @@ class ClockView: UIView {
     self.hours = CGFloat(hours)
     self.minutes = CGFloat(minutes)
     self.seconds = CGFloat(seconds)
-    print(self.description)
     setNeedsDisplay()
   }
   

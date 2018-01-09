@@ -10,27 +10,29 @@ import UIKit
 
 class ViewController: UIViewController {
   
+  /// PaintCode used for drawing a custom clock
   @IBOutlet weak var clockView: ClockView!
   @IBOutlet weak var UpdateBtn: UIBarButtonItem!
   
+  // This will load the clock's default time
   override func viewDidLoad() {
     super.viewDidLoad()
     title = "PaintCode Clock"
-    
   }
   
   @IBAction func updateAction(_ sender: Any) {
-    updateNow()
+    _ = updateNow()
   }
   
-  func updateNow() {
-    clockView?.timeToDisplay = Date()
+  func updateNow() -> Date {
+    let now = Date()
+    clockView?.timeToDisplay = now
+    return now
   }
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
-  
   
 }

@@ -7,30 +7,40 @@
 //
 
 import XCTest
-@testable import clock4
+//@testable import clock4
 
 class clock4Tests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+  
+  override func setUp() {
+    super.setUp()
+    // Put setup code here. This method is called before the invocation of each test method in the class.
+  }
+  
+  override func tearDown() {
+    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    super.tearDown()
+  }
+  
+  func testViewController() {
+    let vc = ViewController()
+    let now = vc.updateNow()
+    XCTAssert(now.isEarlier(than: Date()))
+  }
+  
+  func testClockView() {
+    let cv = ClockView()
+    print(cv.description)
+    cv.timeToDisplay = Date()
+    print(cv.description)
+    cv.configureClock(hours: 3, minutes: 4, seconds: 5)
+    print(cv.description)
+  }
+  
+  func testPerformanceExample() {
+    // This is an example of a performance test case.
+    self.measure {
+      // Put the code you want to measure the time of here.
     }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        
-      
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
+  }
+  
 }
