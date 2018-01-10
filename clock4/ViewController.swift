@@ -15,7 +15,7 @@ class ViewController: UIViewController {
   @IBOutlet weak var clockView: ClockView!
   @IBOutlet weak var UpdateBtn: UIBarButtonItem!
   
-  // This will load the clock's default time
+  /// Load the clock's default time @IBInspectable parameters only
   override func viewDidLoad() {
     super.viewDidLoad()
     title = "PaintCode Clock"

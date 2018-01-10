@@ -42,7 +42,7 @@ class ClockView: UIView {
   }
   
   override func draw(_ rect: CGRect) {
-    /// StyleKits all require CGFloats for numbers as hours, minutes, and seconds
+    /// StyleKits require CGFloats for all numbers such as hours, minutes, and seconds
     StyleKit_Clock.drawClock(frame: rect, resizing: .center,
                              hours: hours, minutes: minutes, seconds: seconds)
   }
