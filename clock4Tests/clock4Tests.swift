@@ -24,7 +24,7 @@ class clock4Tests: XCTestCase {
   func testViewController() {
     let vc = ViewController()
     let now = vc.updateNow()
-    XCTAssert(now.isEarlier(than: Date()))
+    XCTAssertNotNil(now)
   }
   
   func testClockView() {
