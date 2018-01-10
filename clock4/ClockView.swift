@@ -20,12 +20,6 @@ class ClockView: UIView {
   /// The second hand value - default is 0
   @IBInspectable public var seconds: CGFloat = 0 { didSet { setNeedsDisplay() } }
   
-  /// Creating a ClockView can be done with these three Int paramaters
-//  convenience init(hours: Int, minutes: Int, seconds: Int) {
-//    self.init()
-//    configureClock(hours: hours, minutes: minutes, seconds: seconds)
-//  }
-  
   override var description: String {
     return "ClockView (h:\(hours), m:\(minutes), s:\(seconds))"
   }
