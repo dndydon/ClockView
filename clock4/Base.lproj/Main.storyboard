@@ -18,13 +18,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y1R-6c-2sq" customClass="ClockView" customModule="clock4" customModuleProvider="target">
-                                <rect key="frame" x="16" y="0.0" width="343" height="641"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Time Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDu-gY-fs5">
+                                <rect key="frame" x="125.66666666666669" y="0.0" width="124" height="27"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" priority="750" constant="350" id="0bl-eB-aKh"/>
-                                    <constraint firstAttribute="width" secondItem="y1R-6c-2sq" secondAttribute="height" multiplier="187:163" priority="750" constant="302.46625766871165" id="FYh-3B-6bK"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" priority="750" constant="704" id="pzC-qH-cyO"/>
+                                    <constraint firstAttribute="height" constant="27" id="Y8r-41-Sqc"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view opaque="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="XuC-4h-N3A" customClass="StateDiagram" customModule="clock4">
+                                <rect key="frame" x="0.0" y="208" width="380" height="398"/>
+                                <color key="backgroundColor" red="0.87450987099999999" green="0.89019614459999996" blue="0.90980398650000005" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="XuC-4h-N3A" secondAttribute="height" multiplier="303:349" constant="34.458452722063043" id="YoW-33-R39"/>
+                                </constraints>
+                            </view>
+                            <view opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" semanticContentAttribute="spatial" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y1R-6c-2sq" customClass="ClockView" customModule="clock4">
+                                <rect key="frame" x="110" y="35" width="160" height="165"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="hours">
                                         <real key="value" value="0.0"/>
@@ -36,42 +47,22 @@
                                         <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="0bl-eB-aKh"/>
-                                        <exclude reference="pzC-qH-cyO"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="0bl-eB-aKh"/>
-                                        <include reference="pzC-qH-cyO"/>
-                                    </mask>
-                                </variation>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.89662143640000003" green="0.89662143640000003" blue="0.89662143640000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.87450987099999999" green="0.89019614459999996" blue="0.90980398650000005" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
-                            <constraint firstItem="y1R-6c-2sq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="D0h-9m-mhs"/>
-                            <constraint firstItem="y1R-6c-2sq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="QDK-Ju-JmX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="y1R-6c-2sq" secondAttribute="bottom" id="RcS-zh-rCb"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="y1R-6c-2sq" secondAttribute="bottom" id="VHx-HW-5In"/>
-                            <constraint firstItem="y1R-6c-2sq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rJ0-HX-kdz"/>
-                            <constraint firstItem="y1R-6c-2sq" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="yGP-Og-kXF"/>
+                            <constraint firstItem="y1R-6c-2sq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="110" id="9aq-YD-cbt"/>
+                            <constraint firstItem="y1R-6c-2sq" firstAttribute="centerX" secondItem="XuC-4h-N3A" secondAttribute="centerX" constant="0.5" id="GhP-CA-PNd"/>
+                            <constraint firstItem="y1R-6c-2sq" firstAttribute="centerX" secondItem="uDu-gY-fs5" secondAttribute="centerX" constant="2.8333333333333144" id="RnZ-m4-oVz"/>
+                            <constraint firstItem="y1R-6c-2sq" firstAttribute="top" secondItem="uDu-gY-fs5" secondAttribute="bottom" constant="8" symbolic="YES" id="Y1s-4Z-H2x"/>
+                            <constraint firstItem="XuC-4h-N3A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fSc-3L-fWl"/>
+                            <constraint firstItem="uDu-gY-fs5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ge6-4l-agN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XuC-4h-N3A" secondAttribute="trailing" constant="-5" id="hT5-em-6bg"/>
+                            <constraint firstAttribute="bottom" secondItem="y1R-6c-2sq" secondAttribute="bottom" constant="524" id="jeq-lK-7qT"/>
+                            <constraint firstItem="XuC-4h-N3A" firstAttribute="top" secondItem="y1R-6c-2sq" secondAttribute="bottom" constant="8" symbolic="YES" id="l1N-pT-Hhy"/>
+                            <constraint firstItem="uDu-gY-fs5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xXi-go-iTt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="RcS-zh-rCb"/>
-                                <exclude reference="yGP-Og-kXF"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=compact">
-                            <mask key="constraints">
-                                <include reference="RcS-zh-rCb"/>
-                                <include reference="yGP-Og-kXF"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="Oju-dn-2ph">
                         <barButtonItem key="rightBarButtonItem" title="Update" id="d4y-bp-b8E">
@@ -85,12 +76,14 @@
                     <connections>
                         <outlet property="UpdateBtn" destination="d4y-bp-b8E" id="EgZ-fl-acZ"/>
                         <outlet property="clockView" destination="y1R-6c-2sq" id="tzs-5B-Dcs"/>
+                        <outlet property="dateTimeLabel" destination="uDu-gY-fs5" id="x9e-HY-t8P"/>
+                        <outlet property="stateDiagram" destination="XuC-4h-N3A" id="ZfG-Aj-1mX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <customObject id="SC0-BQ-k41" customClass="StyleKit_Clock" customModule="clock4" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="210" y="86"/>
+            <point key="canvasLocation" x="208.80000000000001" y="85.714285714285722"/>
         </scene>
         <!--PaintCode Clock-->
         <scene sceneID="KEo-40-rUF">

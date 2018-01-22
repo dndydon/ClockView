@@ -20,6 +20,10 @@
 		F87C8FC3200465400052A58F /* StyleKit_Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F870EC631F33E23A00D36C89 /* StyleKit_Clock.swift */; };
 		F87C8FC5200474440052A58F /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87C8FC4200474440052A58F /* DateHelper.swift */; };
 		F87C8FC6200474440052A58F /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87C8FC4200474440052A58F /* DateHelper.swift */; };
+		F896216220084C1900CB830E /* StateDiagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = F896216120084C1900CB830E /* StateDiagram.swift */; };
+		F896216420084C5900CB830E /* StyleKit_ConsensusGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = F896216320084C5900CB830E /* StyleKit_ConsensusGraph.swift */; };
+		F896216520084FBA00CB830E /* StyleKit_ConsensusGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = F896216320084C5900CB830E /* StyleKit_ConsensusGraph.swift */; };
+		F896216620084FBD00CB830E /* StateDiagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = F896216120084C1900CB830E /* StateDiagram.swift */; };
 		F8B574DE20024A82006EFDDB /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B574DC20024A82006EFDDB /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +51,8 @@
 		F870EC611F32D57F00D36C89 /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		F870EC631F33E23A00D36C89 /* StyleKit_Clock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleKit_Clock.swift; sourceTree = "<group>"; };
 		F87C8FC4200474440052A58F /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		F896216120084C1900CB830E /* StateDiagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateDiagram.swift; sourceTree = "<group>"; };
+		F896216320084C5900CB830E /* StyleKit_ConsensusGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleKit_ConsensusGraph.swift; sourceTree = "<group>"; };
 		F8B574DD20024A82006EFDDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,8 +109,10 @@
 				F87C8FC4200474440052A58F /* DateHelper.swift */,
 				F870EC3D1F3280DB00D36C89 /* ViewController.swift */,
 				F870EC611F32D57F00D36C89 /* ClockView.swift */,
+				F896216120084C1900CB830E /* StateDiagram.swift */,
 				F83735A82002CFF100A3F24E /* Alert.swift */,
 				F870EC631F33E23A00D36C89 /* StyleKit_Clock.swift */,
+				F896216320084C5900CB830E /* StyleKit_ConsensusGraph.swift */,
 				F870EC3F1F3280DB00D36C89 /* Main.storyboard */,
 				F83735A320024B5700A3F24E /* Other */,
 			);
@@ -221,8 +229,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F896216220084C1900CB830E /* StateDiagram.swift in Sources */,
 				F870EC621F32D57F00D36C89 /* ClockView.swift in Sources */,
 				F870EC3E1F3280DB00D36C89 /* ViewController.swift in Sources */,
+				F896216420084C5900CB830E /* StyleKit_ConsensusGraph.swift in Sources */,
 				F870EC3C1F3280DB00D36C89 /* AppDelegate.swift in Sources */,
 				F87C8FC5200474440052A58F /* DateHelper.swift in Sources */,
 				F83735A92002CFF100A3F24E /* Alert.swift in Sources */,
@@ -234,9 +244,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F896216620084FBD00CB830E /* StateDiagram.swift in Sources */,
 				F87C8FC6200474440052A58F /* DateHelper.swift in Sources */,
 				F87C8FC2200464890052A58F /* ClockView.swift in Sources */,
 				F87C8FC3200465400052A58F /* StyleKit_Clock.swift in Sources */,
+				F896216520084FBA00CB830E /* StyleKit_ConsensusGraph.swift in Sources */,
 				F870EC511F3280DB00D36C89 /* clock4Tests.swift in Sources */,
 				F87C8FC12004647F0052A58F /* ViewController.swift in Sources */,
 			);

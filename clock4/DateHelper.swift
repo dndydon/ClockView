@@ -45,3 +45,22 @@ public extension Date {
   }
   
 }
+
+class DateUtils: NSObject {
+  public let dateFormatter: DateFormatter = {
+    let myDateFormatter = DateFormatter()
+    myDateFormatter.dateStyle = .short
+    myDateFormatter.timeStyle = .medium
+    myDateFormatter.doesRelativeDateFormatting = true
+    
+    return myDateFormatter
+  }()
+}
+
+extension Date {
+  public func asDateTimeString() -> String {
+    let formatter = DateUtils().dateFormatter
+    let dateString = formatter.string(from: self)
+    return dateString
+  }
+}
