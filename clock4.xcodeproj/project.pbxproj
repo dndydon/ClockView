@@ -38,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F828BB7F2016B41400C9DF86 /* Screen Shot - iPhone X - 2018-01-22 at 15.15.15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot - iPhone X - 2018-01-22 at 15.15.15.png"; sourceTree = SOURCE_ROOT; };
+		F828BB812016B43100C9DF86 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		F83735A82002CFF100A3F24E /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		F870EC381F3280DB00D36C89 /* clock4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clock4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F870EC3B1F3280DB00D36C89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,8 @@
 		F83735A320024B5700A3F24E /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				F828BB812016B43100C9DF86 /* README.md */,
+				F828BB7F2016B41400C9DF86 /* Screen Shot - iPhone X - 2018-01-22 at 15.15.15.png */,
 				F8B574DC20024A82006EFDDB /* Launch Screen.storyboard */,
 				F870EC421F3280DB00D36C89 /* Assets.xcassets */,
 				F870EC471F3280DB00D36C89 /* Info.plist */,
