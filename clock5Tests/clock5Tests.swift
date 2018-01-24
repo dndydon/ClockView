@@ -1,15 +1,15 @@
 //
-//  clock4Tests.swift
-//  clock4Tests
+//  clock5Tests.swift
+//  clock5Tests
 //
 //  Created by Don Sleeter on 8/2/17.
 //  Copyright © 2017 Don Sleeter. All rights reserved.
 //
 
 import XCTest
-//@testable import clock4
+@testable import clock5
 
-class clock4Tests: XCTestCase {
+class clock5Tests: XCTestCase {
   
   override func setUp() {
     super.setUp()

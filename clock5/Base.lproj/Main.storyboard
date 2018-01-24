@@ -18,24 +18,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Time Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDu-gY-fs5">
-                                <rect key="frame" x="125.66666666666669" y="0.0" width="124" height="27"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="27" id="Y8r-41-Sqc"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view opaque="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="XuC-4h-N3A" customClass="StateDiagram" customModule="clock4">
-                                <rect key="frame" x="0.0" y="208" width="380" height="398"/>
+                                <rect key="frame" x="0.0" y="208" width="375" height="392"/>
                                 <color key="backgroundColor" red="0.87450987099999999" green="0.89019614459999996" blue="0.90980398650000005" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="XuC-4h-N3A" secondAttribute="height" multiplier="303:349" constant="34.458452722063043" id="YoW-33-R39"/>
                                 </constraints>
                             </view>
                             <view opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" semanticContentAttribute="spatial" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y1R-6c-2sq" customClass="ClockView" customModule="clock4">
-                                <rect key="frame" x="110" y="35" width="160" height="165"/>
+                                <rect key="frame" x="110" y="35" width="155" height="165"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="155" id="pvU-Ko-xoM"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="hours">
                                         <real key="value" value="0.0"/>
@@ -48,18 +42,25 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Time Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDu-gY-fs5">
+                                <rect key="frame" x="126" y="0.0" width="124" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="Y8r-41-Sqc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.87450987099999999" green="0.89019614459999996" blue="0.90980398650000005" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
-                            <constraint firstItem="y1R-6c-2sq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="110" id="9aq-YD-cbt"/>
-                            <constraint firstItem="y1R-6c-2sq" firstAttribute="centerX" secondItem="XuC-4h-N3A" secondAttribute="centerX" constant="0.5" id="GhP-CA-PNd"/>
-                            <constraint firstItem="y1R-6c-2sq" firstAttribute="centerX" secondItem="uDu-gY-fs5" secondAttribute="centerX" constant="2.8333333333333144" id="RnZ-m4-oVz"/>
+                            <constraint firstItem="y1R-6c-2sq" firstAttribute="centerX" secondItem="uDu-gY-fs5" secondAttribute="centerX" id="1UN-Pq-ydu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XuC-4h-N3A" secondAttribute="bottom" constant="40.666666666666742" id="WZg-79-R3c"/>
                             <constraint firstItem="y1R-6c-2sq" firstAttribute="top" secondItem="uDu-gY-fs5" secondAttribute="bottom" constant="8" symbolic="YES" id="Y1s-4Z-H2x"/>
                             <constraint firstItem="XuC-4h-N3A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fSc-3L-fWl"/>
                             <constraint firstItem="uDu-gY-fs5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ge6-4l-agN"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XuC-4h-N3A" secondAttribute="trailing" constant="-5" id="hT5-em-6bg"/>
-                            <constraint firstAttribute="bottom" secondItem="y1R-6c-2sq" secondAttribute="bottom" constant="524" id="jeq-lK-7qT"/>
-                            <constraint firstItem="XuC-4h-N3A" firstAttribute="top" secondItem="y1R-6c-2sq" secondAttribute="bottom" constant="8" symbolic="YES" id="l1N-pT-Hhy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XuC-4h-N3A" secondAttribute="trailing" id="hT5-em-6bg"/>
+                            <constraint firstItem="XuC-4h-N3A" firstAttribute="top" secondItem="y1R-6c-2sq" secondAttribute="bottom" constant="8" id="icr-fz-PP0"/>
                             <constraint firstItem="uDu-gY-fs5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xXi-go-iTt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
