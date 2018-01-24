@@ -51,7 +51,7 @@ class DateUtils: NSObject {
     let myDateFormatter = DateFormatter()
     myDateFormatter.dateStyle = .short
     myDateFormatter.timeStyle = .medium
-    myDateFormatter.doesRelativeDateFormatting = true
+    myDateFormatter.doesRelativeDateFormatting = false
     
     return myDateFormatter
   }()

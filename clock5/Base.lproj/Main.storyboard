@@ -10,82 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Clock-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController title="Clock" id="BYZ-38-t0r" customClass="ViewController" customModule="clock4" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view opaque="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="XuC-4h-N3A" customClass="StateDiagram" customModule="clock4">
-                                <rect key="frame" x="0.0" y="208" width="375" height="392"/>
-                                <color key="backgroundColor" red="0.87450987099999999" green="0.89019614459999996" blue="0.90980398650000005" alpha="1" colorSpace="deviceRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="XuC-4h-N3A" secondAttribute="height" multiplier="303:349" constant="34.458452722063043" id="YoW-33-R39"/>
-                                </constraints>
-                            </view>
-                            <view opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" semanticContentAttribute="spatial" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y1R-6c-2sq" customClass="ClockView" customModule="clock4">
-                                <rect key="frame" x="110" y="35" width="155" height="165"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="155" id="pvU-Ko-xoM"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="hours">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="minutes">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="seconds">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Time Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDu-gY-fs5">
-                                <rect key="frame" x="126" y="0.0" width="124" height="27"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="27" id="Y8r-41-Sqc"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="0.87450987099999999" green="0.89019614459999996" blue="0.90980398650000005" alpha="1" colorSpace="deviceRGB"/>
-                        <constraints>
-                            <constraint firstItem="y1R-6c-2sq" firstAttribute="centerX" secondItem="uDu-gY-fs5" secondAttribute="centerX" id="1UN-Pq-ydu"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XuC-4h-N3A" secondAttribute="bottom" constant="40.666666666666742" id="WZg-79-R3c"/>
-                            <constraint firstItem="y1R-6c-2sq" firstAttribute="top" secondItem="uDu-gY-fs5" secondAttribute="bottom" constant="8" symbolic="YES" id="Y1s-4Z-H2x"/>
-                            <constraint firstItem="XuC-4h-N3A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fSc-3L-fWl"/>
-                            <constraint firstItem="uDu-gY-fs5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ge6-4l-agN"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XuC-4h-N3A" secondAttribute="trailing" id="hT5-em-6bg"/>
-                            <constraint firstItem="XuC-4h-N3A" firstAttribute="top" secondItem="y1R-6c-2sq" secondAttribute="bottom" constant="8" id="icr-fz-PP0"/>
-                            <constraint firstItem="uDu-gY-fs5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xXi-go-iTt"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Oju-dn-2ph">
-                        <barButtonItem key="rightBarButtonItem" title="Update" id="d4y-bp-b8E">
-                            <connections>
-                                <action selector="updateAction:" destination="BYZ-38-t0r" id="dWy-Rn-py1"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="UpdateBtn" destination="d4y-bp-b8E" id="EgZ-fl-acZ"/>
-                        <outlet property="clockView" destination="y1R-6c-2sq" id="tzs-5B-Dcs"/>
-                        <outlet property="dateTimeLabel" destination="uDu-gY-fs5" id="x9e-HY-t8P"/>
-                        <outlet property="stateDiagram" destination="XuC-4h-N3A" id="ZfG-Aj-1mX"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <customObject id="SC0-BQ-k41" customClass="StyleKit_Clock" customModule="clock4" customModuleProvider="target"/>
-            </objects>
-            <point key="canvasLocation" x="208.80000000000001" y="85.714285714285722"/>
-        </scene>
         <!--PaintCode Clock-->
         <scene sceneID="KEo-40-rUF">
             <objects>
@@ -102,12 +26,82 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </toolbar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qcJ-Wy-fak"/>
+                        <segue destination="w4G-ZR-65b" kind="relationship" relationship="rootViewController" id="d6a-TR-Gyl"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yp8-NG-j3V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-551" y="87"/>
+        </scene>
+        <!--Clock-->
+        <scene sceneID="WMj-2Y-868">
+            <objects>
+                <viewController storyboardIdentifier="DDS1" title="Clock" useStoryboardIdentifierAsRestorationIdentifier="YES" id="w4G-ZR-65b" customClass="ViewController" customModule="clock5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="liv-XP-zqn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Jhe-ub-54p" customClass="StateDiagram" customModule="clock5" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="208" width="375" height="392"/>
+                                <color key="backgroundColor" red="0.87450987099999999" green="0.89019614459999996" blue="0.90980398650000005" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Jhe-ub-54p" secondAttribute="height" multiplier="303:349" constant="34.458452722063043" id="hMx-NE-2t1"/>
+                                </constraints>
+                            </view>
+                            <view opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" semanticContentAttribute="spatial" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="spq-Qd-8Vk" customClass="ClockView" customModule="clock5" customModuleProvider="target">
+                                <rect key="frame" x="110" y="35" width="155" height="165"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="165" id="9me-CJ-bUk"/>
+                                    <constraint firstAttribute="width" constant="155" id="mVH-Ir-v1y"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="hours">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minutes">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="seconds">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Time Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4D-E0-Vb2">
+                                <rect key="frame" x="126" y="0.0" width="124" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="pf0-5P-E3y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87450987099999999" green="0.89019614459999996" blue="0.90980398650000005" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="P4D-E0-Vb2" firstAttribute="top" secondItem="ZCF-1f-6Y8" secondAttribute="top" id="6ao-N3-F7g"/>
+                            <constraint firstItem="spq-Qd-8Vk" firstAttribute="centerX" secondItem="P4D-E0-Vb2" secondAttribute="centerX" id="7PB-rA-YeB"/>
+                            <constraint firstItem="spq-Qd-8Vk" firstAttribute="top" secondItem="P4D-E0-Vb2" secondAttribute="bottom" constant="8" symbolic="YES" id="BdM-AJ-f0C"/>
+                            <constraint firstItem="ZCF-1f-6Y8" firstAttribute="bottom" secondItem="Jhe-ub-54p" secondAttribute="bottom" constant="40.666666666666742" id="PvK-JS-boE"/>
+                            <constraint firstItem="Jhe-ub-54p" firstAttribute="leading" secondItem="ZCF-1f-6Y8" secondAttribute="leading" id="QSJ-cc-rRE"/>
+                            <constraint firstItem="P4D-E0-Vb2" firstAttribute="centerX" secondItem="ZCF-1f-6Y8" secondAttribute="centerX" id="aM1-JF-9eS"/>
+                            <constraint firstItem="ZCF-1f-6Y8" firstAttribute="trailing" secondItem="Jhe-ub-54p" secondAttribute="trailing" id="bLd-Xt-jz3"/>
+                            <constraint firstItem="Jhe-ub-54p" firstAttribute="top" secondItem="spq-Qd-8Vk" secondAttribute="bottom" constant="8" id="niF-T8-Mbc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZCF-1f-6Y8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bTe-Vk-Dpi"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="clockView" destination="spq-Qd-8Vk" id="rWX-t8-pKo"/>
+                        <outlet property="dateTimeLabel" destination="P4D-E0-Vb2" id="dae-FB-zgb"/>
+                        <outlet property="stateDiagram" destination="Jhe-ub-54p" id="tyH-To-zh8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CSF-Ex-ff6" sceneMemberID="firstResponder"/>
+                <customObject id="gO7-BX-aW3" customClass="StyleKit_Clock" customModule="clock5" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="242" y="86"/>
         </scene>
     </scenes>
 </document>

@@ -7,6 +7,7 @@
 //
 
 import XCTest
+//@testable import clock5
 
 class clock5ViewTests: XCTestCase {
     
