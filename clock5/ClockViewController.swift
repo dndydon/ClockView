@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ClockViewController: UIViewController {
   
   /// PaintCode used for drawing a custom clock
   

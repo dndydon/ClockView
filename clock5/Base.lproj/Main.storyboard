@@ -36,7 +36,7 @@
         <!--Clock-->
         <scene sceneID="WMj-2Y-868">
             <objects>
-                <viewController storyboardIdentifier="DDS1" title="Clock" useStoryboardIdentifierAsRestorationIdentifier="YES" id="w4G-ZR-65b" customClass="ViewController" customModule="clock5" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DDS1" title="Clock" useStoryboardIdentifierAsRestorationIdentifier="YES" id="w4G-ZR-65b" customClass="ClockViewController" customModule="clock5" sceneMemberID="viewController">
                     <view key="view" autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="liv-XP-zqn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

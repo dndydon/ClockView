@@ -22,20 +22,20 @@ class clock5Tests: XCTestCase {
   }
   
   func testViewController() {
-    let vc = ViewController()
+    let vc = ClockViewController()
     vc.timeToDisplay = Date().addingTimeInterval(-36000)
     //let now = vc.updateNow()
     //XCTAssertNotNil(now)
   }
   
-//  func testClockView() {
-//    let cv = ClockView()
-//    print(cv.description)
-//    cv.timeToDisplay = Date()
-//    print(cv.description)
-//    cv.configureClock(hours: 3, minutes: 4, seconds: 5)
-//    print(cv.description)
-//  }
+  func testClockView() {
+    let cv = ClockView()
+    print(cv.description)
+    cv.timeToDisplay = Date()
+    print(cv.description)
+    cv.configureClock(hours: 3, minutes: 4, seconds: 5)
+    print(cv.description)
+  }
   
   func testPerformanceExample() {
     // This is an example of a performance test case.
