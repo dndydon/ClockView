@@ -33,7 +33,7 @@ class StateDiagram: UIView {
   
   override func draw(_ rect: CGRect) {
     /// StyleKits require CGFloats for all numbers such as hours, minutes, and seconds
-    print(rect)
+    // print(rect)
     
     /// this is the default constructor signature
     StyleKit_ConsensusGraph.drawArgument(frame: rect,
