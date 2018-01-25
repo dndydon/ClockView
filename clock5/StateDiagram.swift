@@ -11,8 +11,7 @@ import UIKit
 @IBDesignable
 class StateDiagram: UIView {
   
-  /// The color value - default is UIColor(red: 0.173, green: 0.494, blue: 0.141, alpha: 1.000)
-  //@IBInspectable var cColor: UIColor = UIColor(red: 0.173, green: 0.494, blue: 0.141, alpha: 1.000) { didSet { setNeedsDisplay() } }
+  /// The agreeColor value default is UIColor(red: 0.173, green: 0.494, blue: 0.141, alpha: 1.000)
   @IBInspectable var agreeColor: UIColor = UIColor(red: 0.173, green: 0.494, blue: 0.141, alpha: 1.000) { didSet { setNeedsDisplay() } }
   @IBInspectable var disagreeColor: UIColor = UIColor(red: 0.775, green: 0.000, blue: 0.000, alpha: 1.000) { didSet { setNeedsDisplay() } }
   
