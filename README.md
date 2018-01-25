@@ -3,7 +3,7 @@ A PaintCode-based ClockView iOS app written in Swift 4. Demo only.
 
 ![iOS 11.0+](https://img.shields.io/badge/iOS%2011.0%2B-compatible-blue.svg) [![Swift4](https://img.shields.io/badge/Swift4.0-compatible-green.svg)](https://developer.apple.com/swift)
 
-<img src="https://i.imgur.com/3ssZ0cN.png">
+<img src="https://i.imgur.com/3ssZ0cNm.png">
 
 ## Overview
 
