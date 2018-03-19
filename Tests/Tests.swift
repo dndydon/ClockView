@@ -1,15 +1,15 @@
 //
-//  clock5ViewTests.swift
-//  clock5ViewTests
+//  Tests.swift
+//  Tests
 //
-//  Created by Don Sleeter on 1/24/18.
+//  Created by Don Sleeter on 3/18/18.
 //  Copyright © 2018 Don Sleeter. All rights reserved.
 //
 
 import XCTest
-//@testable import clock5
+@testable import clock5
 
-class clock5ViewTests: XCTestCase {
+class Tests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -21,10 +21,21 @@ class clock5ViewTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+  func testViewController() {
+    let vc = ClockViewController()
+    vc.timeToDisplay = Date().addingTimeInterval(-36000)
+    let now = vc.updateNow()
+    XCTAssertNotNil(now)
+  }
+  
+  func testClockView() {
+    let cv = ClockView()
+    print(cv.description)
+    cv.timeToDisplay = Date()
+    print(cv.description)
+    cv.configureClock(hours: 3, minutes: 4, seconds: 5)
+    print(cv.description)
+  }
     
     func testPerformanceExample() {
         // This is an example of a performance test case.

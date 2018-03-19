@@ -18,8 +18,19 @@
 		F87C8FC5200474440052A58F /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87C8FC4200474440052A58F /* DateHelper.swift */; };
 		F896216220084C1900CB830E /* StateDiagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = F896216120084C1900CB830E /* StateDiagram.swift */; };
 		F896216420084C5900CB830E /* StyleKit_ConsensusGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = F896216320084C5900CB830E /* StyleKit_ConsensusGraph.swift */; };
+		F8A33E42205F1501005184CE /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A33E41205F1501005184CE /* Tests.swift */; };
 		F8B574DE20024A82006EFDDB /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B574DC20024A82006EFDDB /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8A33E44205F1501005184CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F870EC301F3280DB00D36C89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F870EC371F3280DB00D36C89;
+			remoteInfo = clock5;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F828BB7F2016B41400C9DF86 /* Screen Shot - iPhone X - 2018-01-22 at 15.15.15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot - iPhone X - 2018-01-22 at 15.15.15.png"; sourceTree = SOURCE_ROOT; };
@@ -32,20 +43,26 @@
 		F870EC401F3280DB00D36C89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F870EC421F3280DB00D36C89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F870EC471F3280DB00D36C89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F870EC501F3280DB00D36C89 /* clock5Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clock5Tests.swift; sourceTree = "<group>"; };
-		F870EC521F3280DB00D36C89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F870EC611F32D57F00D36C89 /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		F870EC631F33E23A00D36C89 /* StyleKit_Clock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleKit_Clock.swift; sourceTree = "<group>"; };
 		F87C8FC4200474440052A58F /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		F896216120084C1900CB830E /* StateDiagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateDiagram.swift; sourceTree = "<group>"; };
 		F896216320084C5900CB830E /* StyleKit_ConsensusGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleKit_ConsensusGraph.swift; sourceTree = "<group>"; };
+		F8A33E3F205F1501005184CE /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8A33E41205F1501005184CE /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		F8A33E43205F1501005184CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8B574DD20024A82006EFDDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
-		F8FDBB772018916E009B5105 /* clock5ViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clock5ViewTests.swift; sourceTree = "<group>"; };
-		F8FDBB792018916E009B5105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F870EC351F3280DB00D36C89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8A33E3C205F1501005184CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -72,8 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				F870EC3A1F3280DB00D36C89 /* clock5 */,
-				F870EC4F1F3280DB00D36C89 /* clock5Tests */,
-				F8FDBB762018916E009B5105 /* clock5ViewTests */,
+				F8A33E40205F1501005184CE /* Tests */,
 				F870EC391F3280DB00D36C89 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				F870EC381F3280DB00D36C89 /* clock5.app */,
+				F8A33E3F205F1501005184CE /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,22 +120,13 @@
 			path = clock5;
 			sourceTree = "<group>";
 		};
-		F870EC4F1F3280DB00D36C89 /* clock5Tests */ = {
+		F8A33E40205F1501005184CE /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				F870EC501F3280DB00D36C89 /* clock5Tests.swift */,
-				F870EC521F3280DB00D36C89 /* Info.plist */,
+				F8A33E41205F1501005184CE /* Tests.swift */,
+				F8A33E43205F1501005184CE /* Info.plist */,
 			);
-			path = clock5Tests;
-			sourceTree = "<group>";
-		};
-		F8FDBB762018916E009B5105 /* clock5ViewTests */ = {
-			isa = PBXGroup;
-			children = (
-				F8FDBB772018916E009B5105 /* clock5ViewTests.swift */,
-				F8FDBB792018916E009B5105 /* Info.plist */,
-			);
-			path = clock5ViewTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,18 +149,41 @@
 			productReference = F870EC381F3280DB00D36C89 /* clock5.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F8A33E3E205F1501005184CE /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8A33E46205F1501005184CE /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				F8A33E3B205F1501005184CE /* Sources */,
+				F8A33E3C205F1501005184CE /* Frameworks */,
+				F8A33E3D205F1501005184CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8A33E45205F1501005184CE /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = F8A33E3F205F1501005184CE /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		F870EC301F3280DB00D36C89 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0900;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Don Sleeter";
 				TargetAttributes = {
 					F870EC371F3280DB00D36C89 = {
 						CreatedOnToolsVersion = 9.0;
+					};
+					F8A33E3E205F1501005184CE = {
+						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F870EC371F3280DB00D36C89;
 					};
 				};
 			};
@@ -170,6 +201,7 @@
 			projectRoot = "";
 			targets = (
 				F870EC371F3280DB00D36C89 /* clock5 */,
+				F8A33E3E205F1501005184CE /* Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -183,6 +215,13 @@
 				F864250120188EC1005AEA54 /* Default-568h@2x.png in Resources */,
 				F870EC431F3280DB00D36C89 /* Assets.xcassets in Resources */,
 				F870EC411F3280DB00D36C89 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8A33E3D205F1501005184CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,7 +243,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F8A33E3B205F1501005184CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8A33E42205F1501005184CE /* Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F8A33E45205F1501005184CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F870EC371F3280DB00D36C89 /* clock5 */;
+			targetProxy = F8A33E44205F1501005184CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F870EC3F1F3280DB00D36C89 /* Main.storyboard */ = {
@@ -240,6 +295,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -247,6 +303,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -298,6 +355,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -305,6 +363,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -363,6 +422,42 @@
 			};
 			name = Release;
 		};
+		F8A33E47205F1501005184CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96J2PPD4HG;
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = stonecanyon.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/clock5.app/clock5";
+			};
+			name = Debug;
+		};
+		F8A33E48205F1501005184CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96J2PPD4HG;
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = stonecanyon.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/clock5.app/clock5";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -380,6 +475,15 @@
 			buildConfigurations = (
 				F870EC561F3280DB00D36C89 /* Debug */,
 				F870EC571F3280DB00D36C89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8A33E46205F1501005184CE /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8A33E47205F1501005184CE /* Debug */,
+				F8A33E48205F1501005184CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

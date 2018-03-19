@@ -13,10 +13,9 @@ class ClockViewController: UIViewController {
   /// PaintCode used for drawing a custom clock
   
   @IBOutlet weak var clockView: ClockView!
-  @IBOutlet weak var dataPicker: UIDatePicker?
-  @IBOutlet weak var UpdateBtn: UIBarButtonItem!
   @IBOutlet weak var dateTimeLabel: UILabel!
   @IBOutlet weak var stateDiagram: StateDiagram!
+  @IBOutlet var tapGetureRecognizer: UITapGestureRecognizer!
   
   private var timer: Timer!
   
